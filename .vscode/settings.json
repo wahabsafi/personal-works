@@ -1,3 +1,12 @@
 {
-    "python.pythonPath": "/home/wahab/Envs/building-security/bin/python3.8"
+    "python.pythonPath": "/home/wahab/Envs/building-security/bin/python3.8",
+    "editor.fontSize": 15,
+    "django.snippets.exclude": [
+
+        "cms",
+        "wagtail"
+    ],
+    "python.autoComplete.extraPaths": [
+    
+    ]
 }

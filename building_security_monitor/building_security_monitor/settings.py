@@ -37,9 +37,21 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'complex.apps.ComplexConfig'
+]
+# local apps 
+INSTALLED_APPS+=[
+'complex.apps.ComplexConfig',
+'account.apps.AccountConfig',
+'family.apps.FamilyConfig',
+'smart_objects.apps.SmartObjectsConfig',
+'api.apps.ApiConfig'
 ]
 
+# Third-party apps 
+INSTALLED_APPS+=[
+'django_extensions',
+'rest_framework',
+]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -104,9 +116,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'ir-FA'
+LANGUAGE_CODE = 'fa-IR'
 
-TIME_ZONE = 'asia/Tehran'
+TIME_ZONE = 'Asia/Tehran'
 
 USE_I18N = True
 
@@ -119,3 +131,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+AUTH_USER_MODEL='account.User'
