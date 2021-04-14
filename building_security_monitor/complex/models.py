@@ -59,6 +59,7 @@ class Unit(models.Model):
 		return reverse("Unit_detail", kwargs={"pk": self.pk})
 
 class Room(models.Model):
+
 	"""Model definition for Room."""
 
 	unit = models.ForeignKey(Unit,null=True, on_delete=models.SET_NULL)
